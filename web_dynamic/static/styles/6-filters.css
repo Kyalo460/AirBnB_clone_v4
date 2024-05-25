@@ -48,8 +48,18 @@ button:hover {
 }
 .amenities {
     height: 100%;
-    width: 50%;
-    overflow: auto;
+    width: 25%;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    
+}
+
+.trial {
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .popover {

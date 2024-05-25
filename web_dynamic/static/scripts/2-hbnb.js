@@ -15,6 +15,10 @@ $(document).ready(function () {
     $('input[type="checkbox"]').change(function () {
         let amenity_id = $(this).data('id');
         let amenity_name = $(this).data('name');
+        // const amenity = {
+        //     name: amenity_name,
+        //     id: amenity_id,
+        // }
         let choices = '';
 
         is_present = jQuery.inArray(amenity_id, id_arr);
