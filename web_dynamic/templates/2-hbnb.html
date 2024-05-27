@@ -14,8 +14,8 @@
   </head>
   <body>
     <header>
+			<div class="logo"></div>
 			<div id="api_status"></div>
-      <div class="logo"></div>
     </header>
     <div class="container">
       <section class="filters">
@@ -39,7 +39,7 @@
 	</div>
 	<div class="amenities">
 	  <h3>Amenities</h3>
-	  <h4>&nbsp;</h4>
+	  <h4 class="trial">&nbsp;</h4>
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
@@ -73,13 +73,13 @@
 	    <div class="max_guest">{{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>
             <div class="number_rooms">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
             <div class="number_bathrooms">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
-	  </div>
-	  <div class="user">
-            <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
-          </div>
-          <div class="description">
-	    {{ place.description | safe }}
-          </div>
+					</div>
+					<div class="user">
+						<b>Owner: {{ place.user.first_name }} {{ place.user.last_name }}</b>
+					</div>
+					<div class="description">
+						{{ place.description | safe }}
+					</div>
 	</article>
 	{% endfor %}
       </section>
